@@ -1,0 +1,20 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[typescript][typescriptreact][javascript][javascriptreact][json][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}/services/ai/.venv/bin/python",
+  "eslint.workingDirectories": ["apps/web"],
+  "prettier.prettierPath": "apps/web/node_modules/prettier"
+}

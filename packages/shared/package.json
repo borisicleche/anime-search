@@ -1,0 +1,14 @@
+{
+  "name": "@anime-search/shared",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./ai-service": "./src/ai-service.d.ts"
+  },
+  "scripts": {
+    "gen:types": "openapi-typescript http://localhost:8080/openapi.json -o src/ai-service.d.ts --root-types --root-types-no-schema-prefix"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7"
+  }
+}
